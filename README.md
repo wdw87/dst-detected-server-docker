@@ -83,12 +83,27 @@ cd dst-detected-server-docker/
 python3 start.py
 ~~~
 
+5. 修改权限（重要）
+
+~~~bash
+chmod -R a+w ./data/
+~~~
+
 5. 启动容器
 
 ~~~bash
 cd data/
 docker-compose up
 ~~~
+
+ps:这一步需要从docker Hub上拉去镜像，如果速度缓慢，可以尝试自己构建镜像，构建完成后再进行docker-compose up，构建方法：
+
+~~~bash
+cd ../docker/
+docker build -t wdw87/dst-detected-server:latest .
+~~~
+
+
 
 ### 容器启动与停止
 
@@ -115,6 +130,22 @@ docker stop dst_master -d
 ~~~bash
 docker stop dst_caves -d
 ~~~
+
+### 日志查看
+
+查看主世界日志
+
+~~~bash
+docker-compose logs -f --tail=300 dst_master
+~~~
+
+查看洞穴日志
+
+~~~bash
+docker-compose logs -f --tail=300 dst_caves
+~~~
+
+
 
 ### 关于地图生成配置以及mod
 
