@@ -3,7 +3,7 @@
 ############################################################
 FROM debian:buster-slim
 MAINTAINER wdw87 <github.com/wdw87>
-LABEL maintainer="walentinlamonos@gmail.com"
+LABEL maintainer="wdw694439986@gmail.com"
 ARG PUID=1000
 COPY ./sources.list /etc/apt/sources.list
 ENV STEAMCMDDIR /home/steam/steamcmd
