@@ -64,7 +64,7 @@ return {
 		bats = "default", 				-- "never", "rare", "default", "often", "always"
 		fissure = "default", 			-- "never", "rare", "default", "often", "always"
 		wormattacks = "default", 		-- "never", "rare", "default", "often", "always"
-		worms = "default", 				-- "never", "rare", "default", "often", "always"
+		worms = "default" 				-- "never", "rare", "default", "often", "always"
 	},
   required_prefabs={ "multiplayer_portal" },
   substitutes={  },

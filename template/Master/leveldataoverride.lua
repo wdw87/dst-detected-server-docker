@@ -38,7 +38,7 @@ return {
     no_joining_islands=true,
     no_wormholes_to_disconnected_tiles=true,
     roads="default",
-    wormhole_prefab="wormhole" 
+    wormhole_prefab="wormhole"，
 
 		-- RESOURCES
 		flowers = "default", 			-- "never", "rare", "default", "often", "always"
@@ -96,7 +96,7 @@ return {
 		deerclops = "default", 			-- "never", "rare", "default", "often", "always"
 		goosemoose = "default", 		-- "never", "rare", "default", "often", "always"
 		dragonfly = "default", 			-- "never", "rare", "default", "often", "always"
-		antliontribute = "default", 	-- "never", "rare", "default", "often", "always"
+		antliontribute = "default"	 	-- "never", "rare", "default", "often", "always"
   },
   random_set_pieces={
     "Sculptures_2",
