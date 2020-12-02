@@ -149,6 +149,7 @@ docker-compose logs -f --tail=300 dst_caves
 
 ### 关于地图生成配置以及mod
 
-地图配置请在执行start.py前修改/template]/Master/leveldataoverride.lua和/template]/Caves/leveldataoverride.lua
+地图配置请在执行start.py前修改/template/Master/leveldataoverride.lua和/template/Caves/leveldataoverride.lua
+推荐在本地启动服其配置好地图相关参数后直接用本地生成的文件覆盖
 
 mods.ini在执行start.py前前生效，如果游戏中想添加mod，需要手动修改/data中对应的文件
