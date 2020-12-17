@@ -47,7 +47,7 @@ USER steam
 
 RUN ln -s /home/steam/steamcmd/linux32/libstdc++.so.6 /home/steam/dst/bin/lib32/ && \
     cd /home/steam/dst/bin/ && \
-    echo "/home/steam/steamcmd/steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +force_install_dir /home/steam/dst-app +app_update 343050 +quit" > start.sh && \
+    echo "/home/steam/steamcmd/steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +force_install_dir /home/steam/dst +app_update 343050 +quit" > start.sh && \
     echo "/home/steam/dst/bin/dontstarve_dedicated_server_nullrenderer -only_update_server_mods" >> start.sh && \
     echo "/home/steam/dst/bin/dontstarve_dedicated_server_nullrenderer -shard \"\$SHARD_NAME\"" >> start.sh && \
     chmod +x start.sh
